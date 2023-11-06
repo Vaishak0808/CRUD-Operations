@@ -1,0 +1,92 @@
+post
+=====================
+{
+    "event" : 1,
+    "job_position" : 2,
+    "recruiter_alert" : "alert",
+    "first_name" : "Sarang",
+    "last_name" : "A",
+    "email" : "vc@gmail.com",
+    "persona_id" :1,
+    "role" : "Software Developer",
+    "screening_mode" : 2,
+    "dob": "1998-11-27",
+    "gender" : 1,
+    "marital_status" : 1,
+    "address_line":"kannur",
+    "contact_no_primary" : 7012925871,
+    "contact_no_alternate" : 1234567890,
+    "referred_by" : 1,
+    "referred_by_emp" : "John Wick",
+    "pincode" : 686502,
+    "experience_level" : 2,
+    "education_level":1,
+    "education_qualification" : 2,
+    "education_specialization" : 3,
+    "education_institution" : 1,
+    "source" : 1,
+    "source_type" : 1,
+    "reason_for_change_id":1,
+    "years_of_experience" : 2.3,
+    "current_employer" : "ABC",
+    "current_designation" : "Developer",
+    "current_monthly_salary" : 25099900,
+    "expected_monthly_salary" : 5000000,
+    "notice_period" : "20 days",
+    "reason_for_change" : "reason_for_change"
+}
+
+
+put
+=====================
+{
+    "Id" : 3,
+    "event" : 1,
+    "job_position" : 2,
+    "recruiter_alert" : "alert",
+    "first_name" : "Sarang",
+    "last_name" : "A",
+    "email" : "vc@gmail.com",
+    "persona_id" :1,
+    "role" : "Software Developer",
+    "screening_mode" : 2,
+    "dob": "1998-11-27",
+    "gender" : 1,
+    "marital_status" : 1,
+    "address_line":"kannur",
+    "contact_no_primary" : 7012925871,
+    "contact_no_alternate" : 1234567890,
+    "referred_by" : 1,
+    "referred_by_emp" : "John Wick",
+    "pincode" : 686502,
+    "experience_level" : 2,
+    "education_level":1,
+    "education_qualification" : 2,
+    "education_specialization" : 3,
+    "education_institution" : 1,
+    "source" : 1,
+    "source_type" : 1,
+    "reason_for_change_id":1,
+    "years_of_experience" : 2.3,
+    "current_employer" : "ABC",
+    "current_designation" : "Developer",
+    "current_monthly_salary" : 25099900,
+    "expected_monthly_salary" : 5000000,
+    "notice_period" : "20 days",
+    "reason_for_change" : "reason_for_change"
+}
+
+patch
+======================
+{
+    "Id" : 3
+}
+
+delete
+
+====================-
+{
+    "id" : 3
+}
+
+
