@@ -1,0 +1,218 @@
+<div class="card">
+    <h3>Candidate Edit</h3>
+</div>
+
+
+<div class="card" *ngIf="blnshowData">
+    <div class="col-md-12">
+        <div class="example-header">
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">First Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name" [(ngModel)] = "first_name">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Last Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name" [(ngModel)] = "last_name">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" [(ngModel)] = "email">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Mobile Number</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Mobile Number" [(ngModel)] = "mobnum">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Alternate Mobile Number</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Alternate Mobile Number" [(ngModel)] = "altmobnum">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Address</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address" [(ngModel)] = "address">
+            </div>
+
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Pincode</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pincode" [(ngModel)] = "pincode">
+            </div>
+
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">DOB</label>
+                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="DOB" [(ngModel)] = "dob">
+            </div>
+              <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                  <label for="exampleFormControlInput1">Role</label>
+                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Role" [(ngModel)] = "role">
+              </div>
+              <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Recruiter Alert</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Recruiter Alert" [(ngModel)] = "recruiter_alert">
+            </div>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Event</mat-label>
+                <mat-select [(ngModel)] = "intEvent">
+                <mat-option value="{{data.id}}" *ngFor="let data of eventData" >
+                    {{data.name}}
+                </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Job Position</mat-label>
+                <mat-select [(ngModel)] = "intjobRequisition">
+                <mat-option value="{{data.id}}" *ngFor="let data of jobRequisition" >
+                    {{data.name}}
+                </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Persona</mat-label>
+                <mat-select [(ngModel)] = "intpersona">
+                    <mat-option value="{{data.id}}" *ngFor="let data of persona" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Screening Mode</mat-label>
+                <mat-select [(ngModel)] = "intscreeningMode">
+                    <mat-option value="{{data.id}}" *ngFor="let data of screeningMode" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+              
+              
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Gender</mat-label>
+                <mat-select [(ngModel)] = "intgender">
+                    <mat-option value="{{data.id}}" *ngFor="let data of gender" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Marital Status</mat-label>
+                <mat-select [(ngModel)] = "intMaritalStat">
+                    <mat-option value="{{data.id}}" *ngFor="let data of maritalStatus" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Reffered By</mat-label>
+                <mat-select [(ngModel)] = "intempdir">
+                    <mat-option value="{{data.id}}" *ngFor="let data of empDirectory" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Institution</mat-label>
+                <mat-select [(ngModel)] = "inteduInstitution">
+                  <mat-option value="{{data.id}}" *ngFor="let data of eduInstitution" value="{{data.id}}">
+                    {{data.name}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Qualification</mat-label>
+                <mat-select [(ngModel)] = "inteduQualification">
+                    <mat-option value="{{data.id}}" *ngFor="let data of eduQualification" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Specialization</mat-label>
+                <mat-select [(ngModel)] = "intEduSpecialization">
+                    <mat-option value="{{data.id}}" *ngFor="let data of eduSpecialization" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Level</mat-label>
+                <mat-select [(ngModel)] = "intexpLevel">
+                    <mat-option value="{{data.id}}" *ngFor="let data of expLevel" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Source Type</mat-label>
+                <mat-select [(ngModel)] = "intsourceType">
+                    <mat-option value="{{data.id}}" *ngFor="let data of sourceType" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Source</mat-label>
+                <mat-select [(ngModel)] = "intsource">
+                    <mat-option value="{{data.id}}" *ngFor="let data of source" >
+                    {{data.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-4 col-lg-3 col-sm-12" style="margin-top: 2%;">
+                <mat-label>Reason for change</mat-label>
+                <mat-select [(ngModel)] = "intreasonForChange">
+                    <mat-option value="{{data.id}}" *ngFor="let data of reasonForChange" >
+                    {{data.reason}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" *ngIf="blnshowData">
+    <div class="col-md-12">
+        <div class="example-header">
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Current Designation</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Current Designation" [(ngModel)] = "currentDesig">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Current Employer</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Current Employer" [(ngModel)] = "currentEmp">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Current Salary</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Current Salary" [(ngModel)] = "currentSalary">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Expected Salary</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Expected Salary" [(ngModel)] = "expSalary">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Experience in years</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Experience in years" [(ngModel)] = "yearsExp">
+            </div>
+            <div class="form-group col-md-4 col-lg-3 col-sm-12">
+                <label for="exampleFormControlInput1">Notice Period</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Notice Period" [(ngModel)] = "noticePeroid">
+            </div>
+        </div>
+    </div>
+    <button mat-raised-button style="margin: 2%;
+    background-color: aquamarine;
+    width: 120px;" (click) = "saveData()">Save</button>
+    
+</div>
+            

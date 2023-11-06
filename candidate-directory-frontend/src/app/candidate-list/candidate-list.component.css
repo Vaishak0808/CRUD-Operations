@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+  }
+
+.card{
+  padding: 0% 7%;
+}
+tr.mat-header-row {
+  height: 56px;
+  background-color: lightskyblue;
+}
+
+.mat-icon{
+  cursor: pointer;
+}
+.delete_btn{
+  color: red;
+}
