@@ -6,3 +6,10 @@ Django==4.1.5
   
 Angular CLI: 13.3.11
 Node: 14.21.3
+
+Database used: Postgresql
+  Database sql file candidate.sql commited in project folder
+Command to recreate the database in Postgresql:
+  createdb -U username -h localhost database_name
+  psql -U username -h localhost database_name < candidate.sql
+
